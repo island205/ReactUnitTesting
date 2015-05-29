@@ -1,0 +1,30 @@
+{
+  "name": "caculator",
+  "version": "1.0.0",
+  "description": "An demo for React unit testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "React",
+    "Unit",
+    "Testing"
+  ],
+  "author": "island205@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "babel-core": "^5.4.7",
+    "babel-loader": "^5.1.3",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12.33",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-jasmine": "^0.3.5",
+    "karma-webpack": "^1.5.1",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.9.10"
+  }
+}
