@@ -11,6 +11,9 @@ describe('Caculator', function () {
   })
 
   it('should display a caculator', function () {
-    expect(caculator.getDOMNode().textContent).toBe('caculator')
+    var divs = TestUtils.scryRenderedDOMComponentsWithTag(caculator, 'div')
+    expect(divs.length).toBe(3)
+    var as = TestUtils.scryRenderedDOMComponentsWithTag(caculator, 'a')
+    expect(as.length).toBe(18)
   })
 })
