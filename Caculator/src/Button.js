@@ -30,6 +30,7 @@ export default React.createClass({
       width: 72 * this.props.size[0],
       height: 48 * this.props.size[1]
     }
+    
     return (
       <a
         style={style}

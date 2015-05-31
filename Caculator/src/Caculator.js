@@ -30,7 +30,6 @@ export default React.createClass({
     }
   },
   onPress: function (letter) {
-
   },
   render: function () {
     var that = this

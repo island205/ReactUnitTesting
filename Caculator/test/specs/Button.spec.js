@@ -4,10 +4,9 @@ import Button from '../../src/Button'
 var TestUtils = React.addons.TestUtils
 
 describe('Button', function () {
-  var button
 
   it('should generate an equal button', function () {
-    button = TestUtils.renderIntoDocument(
+    var button = TestUtils.renderIntoDocument(
       <Button letter="=" />
     )
     expect(button.getDOMNode().textContent).toBe('=')
@@ -15,7 +14,7 @@ describe('Button', function () {
 
   it('should call onPress as being clicked', function () {
     var letter
-    button = TestUtils.renderIntoDocument(
+    var button = TestUtils.renderIntoDocument(
       <Button
         letter="=" onPress={function (lt) {
         letter = lt
@@ -30,10 +29,11 @@ describe('Button', function () {
   it('should have right position and size', function () {
     var position = [1, 3]
     var size = [2, 1]
-    button = TestUtils.renderIntoDocument(
+    var button = TestUtils.renderIntoDocument(
       <Button letter='=' position={position} size={size}/>
     )
     var domNode = button.getDOMNode()
-    expect(domNode.offsetWidth).toBe(size[0] * 72)
+    expect(domNode.style.width).toBe(size[0] * 72 + 'px')
+    expect(domNode.style.top).toBe(position[1] * 60 + 'px')
   })
 })
