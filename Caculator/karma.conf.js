@@ -48,7 +48,8 @@ module.exports = function(config) {
     webpackMiddleware: {
         // webpack-dev-middleware configuration
         // i. e.
-        noInfo: true
+        noInfo: true,
+        devtool: "#inline-source-map"
     },
 
     plugins: [

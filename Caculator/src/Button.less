@@ -1,5 +1,28 @@
 .button {
   position: absolute;
   border: 1px solid #DFDCD7;
-  border-radius: 6px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+  background-color: #f6f3ee;
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.1), 0 1px 1px 0px rgba(255, 255, 255, 0.75) inset;
+
+  &.clear {
+    background-color: #e27943;
+    border-color: #b64e19;
+    color: white;
+  }
+
+  &.operation {
+    background-color: #f1ede5;
+  }
+
+  &.equal {
+    line-height: 70px;
+    background-color: #838693;
+    border-color: #6a7c7f;
+    color: white;
+  }
 }

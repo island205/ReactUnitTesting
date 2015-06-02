@@ -33,7 +33,7 @@ describe('Button', function () {
       <Button letter='=' position={position} size={size}/>
     )
     var domNode = button.getDOMNode()
-    expect(domNode.style.width).toBe(size[0] * 72 + 'px')
-    expect(domNode.style.top).toBe(position[1] * 60 + 'px')
+    expect(domNode.style.width).toBe(size[0] * 48 + 8 + 'px')
+    expect(domNode.style.top).toBe(position[1] * 38 + 'px')
   })
 })
